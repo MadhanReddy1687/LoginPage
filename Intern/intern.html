@@ -1,0 +1,54 @@
+<html>
+    <head>
+    <title>Blood Bank</title>
+    <link rel="stylesheet" href="intern.css" >  
+        <script src="m.js"></script>
+    </head>
+    
+    <body class="main">
+        <div>
+                    <label for="h1">Select User Type:</label>&nbsp;
+                <input type="radio" id="h1" name="m" value="Hospital">Hospital
+                    <input type="radio" name="m" value="Reciever">Reciever
+                </div>
+                
+        
+        <div class="login">
+            <div class="rform" >
+                
+                
+                <form class="register-form" id="p1">
+                <input type="text" placeholder="userName"/>
+                <input type="text" placeholder="Password"/>
+                <input type="text" placeholder="Email-Id"/>
+                    <button>Create</button><br>
+                    <p class="message" >Already Registered? <br><a href="#" onclick="goToLogin()">Login</a></p>
+                    
+                 </form>
+                <form class="login-form" id="p2">
+                    <input type="text" placeholder="userName"/>
+                    <input type="text" placeholder="Password"/>
+                    <button>Login</button><br>
+                    <p class="message">Not Registered ?<a href="#" onclick="goToRegister()">Register</a></p>
+                
+                
+                
+                </form>
+            </div>
+        </div> 
+        <script>
+      function goToRegister(){
+          document.getElementById("p1").style.display="block";
+           document.getElementById("p2").style.display="none";
+      }
+            function goToLogin(){
+                document.getElementById("p1").style.display="none";
+           document.getElementById("p2").style.display="block";
+            }
+        </script>
+    
+    
+  
+    
+    </body>
+</html>
